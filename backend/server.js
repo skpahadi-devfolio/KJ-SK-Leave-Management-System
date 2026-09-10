@@ -15,7 +15,10 @@ const port = 3000
 
 app.use(express.json());
 
-app.use(cors());   //Allow diffenet orgins
+
+//allow origin for security:-
+const allowOrigins = ["http://localhost:5173", ""]
+app.use(cors({origin: allowOrigins, methods: ["GET", "POST", "PUT", "DELETE"], allowedHeaders: ["Content-Type", "Auhtorization"]}));   //Allow diffenet orgins
 
 connectDB();      //Database connection 
 
