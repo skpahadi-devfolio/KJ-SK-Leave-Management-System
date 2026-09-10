@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+
+/* smooth scrollbar for mobile and desktop */
+/* This is for All Normal style scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+  background: #111827;
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 10px;
+}
+
+/* hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
