@@ -1,6 +1,6 @@
 //All API Calling of Employees:-
 
-const BASE_URL = "http://localhost:3000/api/auth";
+const BASE_URL = "https://kj-sk-leave-management-system.onrender.com/api/auth";
 
 
 

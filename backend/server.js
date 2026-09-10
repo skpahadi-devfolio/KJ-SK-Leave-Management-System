@@ -17,7 +17,7 @@ app.use(express.json());
 
 
 //allow origin for security:-
-const allowOrigins = ["http://localhost:5173", ""]
+const allowOrigins = ["http://localhost:5173", "https://kj-sk-leave-management-system.onrender.com"]
 app.use(cors({origin: allowOrigins, methods: ["GET", "POST", "PUT", "DELETE"], allowedHeaders: ["Content-Type", "Auhtorization"]}));   //Allow diffenet orgins
 
 connectDB();      //Database connection 
