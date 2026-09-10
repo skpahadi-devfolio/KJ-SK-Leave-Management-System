@@ -5,7 +5,7 @@ const TypeAnimationText = () => {
     <div>
       <TypeAnimation
       sequence={[
-        'To Aditron (AIPL) Leave Management System', // Types 'Note Manager app'
+        'To KJ&SK Leave Management System', // Types 'Note Manager app'
         1000,                  // Waits 1s
         '',
         1000,

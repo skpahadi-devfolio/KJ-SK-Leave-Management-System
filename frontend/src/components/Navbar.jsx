@@ -44,7 +44,7 @@ const Navbar = () => {
   return (
     <div className='flex justify-between items-center gap-5 bg-gradient-to-r from-violet-950 to-purple-950 p-3 px-8'>
         <NavLink onClick={()=>{navigate("/")}} className='flex flex-col text-center gap-2'>
-        <p className='md:text-4xl text-2xl text-white font-semibold'>Aditron (AIPL)</p>
+        <p className='md:text-4xl text-2xl text-white font-semibold'>KJ&SK</p>
         <p className='md:text-lg text-base font-bold bg-gradient-to-r from-violet-700 to-slate-700 bg-clip-text text-transparent'>Apply Your Own Leave</p>
         </NavLink>
 
