@@ -7,7 +7,7 @@ let pool;
 export const connectDB = async() => {
     try {
         pool = new Pool({
-            connectionString: process.env.LOCAL_DATABASE
+            connectionString: process.env.PRODUCTION_URL ||process.env.LOCAL_DATABASE
         })
         const client = await pool.connect();
         console.log("Postgresql Connected SuccessFully!");
