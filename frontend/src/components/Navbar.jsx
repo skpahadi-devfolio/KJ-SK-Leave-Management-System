@@ -1,7 +1,7 @@
 import { jwtDecode } from 'jwt-decode';
 import { useState, useEffect } from 'react';
 import { FaBars, FaXmark } from 'react-icons/fa6';
-import { NavLink, useNavigate } from 'react-router-dom'
+import { NavLink, useNavigate} from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -40,9 +40,10 @@ const Navbar = () => {
   const interval = setInterval(checktoken, 1000);
   return () => clearInterval(interval); 
  }, []);
+
   
   return (
-    <div className='flex justify-between items-center gap-5 bg-gradient-to-r from-violet-950 to-purple-950 p-3 px-8'>
+    <div className='relative z-50 flex justify-between items-center gap-5 bg-gradient-to-r from-violet-950 to-purple-950 p-3 px-8'>
         <NavLink onClick={()=>{navigate("/")}} className='flex flex-col text-center gap-2'>
         <p className='md:text-4xl text-2xl text-white font-semibold'>KJ&SK</p>
         <p className='md:text-lg text-base font-bold bg-gradient-to-r from-violet-700 to-slate-700 bg-clip-text text-transparent'>Apply Your Own Leave</p>
@@ -67,14 +68,14 @@ const Navbar = () => {
       {/* mobile-navbar */}
       {menuOpen && (
         <div className="md:hidden absolute top-20 right-7 w-full mx-auto h-auto flex flex-col justify-center items-center gap-6 mt-2 p-6 border border-gray-900 rounded-md bg-gradient-to-r from-slate-950 to-gray-900">
-          <NavLink to={"/"}>Home</NavLink>
-        <NavLink to={"/about"}>About</NavLink>
-        <NavLink to={"/services"}>Services</NavLink>
-        <NavLink to={"/contact"}>Contact</NavLink>
+        <NavLink onClick={()=> setmenuOpen(false)} to={"/"}>Home</NavLink>
+        <NavLink onClick={()=> setmenuOpen(false)} to={"/about"}>About</NavLink>
+        <NavLink onClick={()=> setmenuOpen(false)} to={"/services"}>Services</NavLink>
+        <NavLink onClick={()=> setmenuOpen(false)} to={"/contact"}>Contact</NavLink>
         
         {loggedIn? (<button className={"bg-gradient-to-r from-slate-700 to-gray-800 hover:border border-gray-900 p-4 rounded-xl hover:rounded-full px-8 hover:transition-all hover:duration-700 hover:ease-in-out"} onClick={HandleLogout}>Logout</button>):(<>
-        <NavLink className={"bg-gradient-to-r from-slate-700 to-gray-800 hover:border border-gray-900 p-4 rounded-xl hover:rounded-full px-8 hover:transition-all hover:duration-700 hover:ease-in-out"} to={"/login"}>Login</NavLink>
-        <NavLink className={"bg-gradient-to-r from-slate-700 to-gray-800 hover:border border-gray-900 p-4 rounded-xl hover:rounded-full px-8 hover:transition-all hover:duration-700 hover:ease-in-out"} to={"/signup"}>Signup</NavLink></>)}
+        <NavLink onClick={()=> setmenuOpen(false)} className={"bg-gradient-to-r from-slate-700 to-gray-800 hover:border border-gray-900 p-4 rounded-xl hover:rounded-full px-8 hover:transition-all hover:duration-700 hover:ease-in-out"} to={"/login"}>Login</NavLink>
+        <NavLink onClick={()=> setmenuOpen(false)} className={"bg-gradient-to-r from-slate-700 to-gray-800 hover:border border-gray-900 p-4 rounded-xl hover:rounded-full px-8 hover:transition-all hover:duration-700 hover:ease-in-out"} to={"/signup"}>Signup</NavLink></>)}
         </div>
       )}
     </div>

@@ -78,7 +78,8 @@ const profileHook = () => {
     }
   }
   return (
-    createProfile,
+    {
+      createProfile,
         isProfileCreated,
         EditProfile,
         managerId,
@@ -87,6 +88,7 @@ const profileHook = () => {
         HandleFetchProfile,
         HandleEditMode,
         HandleUpdateProfile
+    }
   )
 }
 
