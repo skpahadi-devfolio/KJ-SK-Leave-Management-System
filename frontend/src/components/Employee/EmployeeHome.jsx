@@ -22,7 +22,7 @@ const EmployeeHome = () => {
         }
       ])
   return (
-      <div className="full-dashboard-employee grid grid-cols-1 md:grid-cols-3 gap-6 p-8 py-12 bg-gradient-to-r from-slate-800 to-indigo-800 rounded-2xl mt-8">
+      <div className="full-dashboard-employee grid grid-cols-1 md:grid-cols-3 gap-6 md:p-8 p-5 py-6 md:py-12 bg-gradient-to-r from-slate-800 to-indigo-800 rounded-2xl mt-8">
           {cards.map((item, index) => (
             <div key={index} className="flex flex-col justify-center items-center gap-5 p-6 bg-gradient-to-r from-white to-slate-400 py-14 rounded-xl">
               <p className='h-15 w-15 rounded-full border flex justify-center items-center'>{item.icon}</p>

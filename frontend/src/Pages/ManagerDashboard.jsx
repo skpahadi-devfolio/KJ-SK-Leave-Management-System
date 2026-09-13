@@ -20,7 +20,7 @@ const ManagerDashboard = () => {
 
       <main className='flex-1 p-6 overflow-y-auto'>
 
-      <h1 className='md:text-2xl text-xl text-center md:text-3xl font-semibold text-white'>Welcome to {userName} Dashboard</h1>
+      <h1 className='md:text-2xl text-xl text-center md:text-3xl font-semibold px-4 text-white'>Welcome to {userName} Dashboard</h1>
         
         {/* rendering the child component of manager */}
         <Outlet/>
