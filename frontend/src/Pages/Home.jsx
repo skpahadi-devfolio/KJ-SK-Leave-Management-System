@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div className="min-h-screen flex flex-col pb-24">
 
-            <div className="heading md:text-5xl text-3xl text-center pt-5">
+            <div className="heading md:text-5xl text-3xl text-center pt-5 bg-gradient-to-r from-violet-900 to-indigo-800 bg-clip-text text-transparent">
                 <p className='md:text-4xl text-xl font-semibold'>Welcome to</p>
                 <p className='font-semibold'><TypeAnimationText/></p>
             </div>

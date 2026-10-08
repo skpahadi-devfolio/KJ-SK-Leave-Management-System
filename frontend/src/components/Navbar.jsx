@@ -53,15 +53,15 @@ const Navbar = () => {
         {/* mobile-hamburger */}
         <div className="mobile-hamburger md:hidden text-3xl" onClick={()=>{setmenuOpen(!menuOpen)}}>{menuOpen?<FaXmark/>:<FaBars/>}</div>
 
-        <nav className='hidden md:flex md:justify-between md:items-center gap-8'>
+        <nav className='hidden md:flex md:justify-between md:items-center gap-8 bg-gradient-to-r from-violet-600 to-pink-500 bg-clip-text text-transparent md:text-lg'>
         <NavLink to={"/"}>Home</NavLink>
         <NavLink to={"/about"}>About</NavLink>
         <NavLink to={"/services"}>Services</NavLink>
         <NavLink to={"/contact"}>Contact</NavLink>
         
         {loggedIn? (<button className={"bg-gradient-to-r from-slate-700 to-gray-800 hover:border border-gray-900 p-4 rounded-xl hover:rounded-full px-8 hover:transition-all hover:duration-700 hover:ease-in-out"} onClick={HandleLogout}>Logout</button>):(<>
-        <NavLink className={"bg-gradient-to-r from-slate-700 to-gray-800 hover:border border-gray-900 p-4 rounded-xl hover:rounded-full px-8 hover:transition-all hover:duration-700 hover:ease-in-out"} to={"/login"}>Login</NavLink>
-        <NavLink className={"bg-gradient-to-r from-slate-700 to-gray-800 hover:border border-gray-900 p-4 rounded-xl hover:rounded-full px-8 hover:transition-all hover:duration-700 hover:ease-in-out"} to={"/signup"}>Signup</NavLink></>)}
+        <NavLink className={"bg-gradient-to-r from-slate-700 to-gray-800 hover:border border-gray-900 p-4 rounded-xl text-white hover:rounded-full px-8 transition-all hover:duration-1000 hover:ease-in-out"} to={"/login"}>Login</NavLink>
+        <NavLink className={"bg-gradient-to-r from-slate-700 to-gray-800 hover:border border-gray-900 p-4 rounded-xl text-white hover:rounded-full px-8 transition-all hover:duration-1000 hover:ease-in-out"} to={"/signup"}>Signup</NavLink></>)}
       </nav>
 
 
