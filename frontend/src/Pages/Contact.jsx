@@ -49,7 +49,7 @@ const Contact = () => {
       <div className="Contact-full-section w-full max-w-3xl mx-auto flex flex-col gap-8 mt-14">
 
        {/* section-first  */}
-       <section className="first-section text-white md:text-xl text-xs">
+       <section className="first-section text-white md:text-xl">
          
          {/* heading */}
          <h1>Let's Connect With Us</h1>
